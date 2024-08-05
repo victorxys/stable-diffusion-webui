@@ -41,6 +41,9 @@ def main():
     if args.test_server:
         configure_for_tests()
 
+    from modules.shared_cmd_options import cmd_opts
+    cmd_opts.share = True  # Add this line to enable public link
+
     start()
 
 
